@@ -7,9 +7,13 @@
             <%= link_to "ホーム", root_path, class: "nav-link" %>
           </li>
         </ul>
+        
         <ul class="right-actions">
           <li class="nav-item">
             <%= link_to "ツイート", "#", class: "btn btn-primary tweet-btn" %>
+          </li>
+          <li class="nav-item">
+              <%= link_to "ログアウト", destroy_user_session_path, method: :delete, class: "nav-link" %>
           </li>
         </ul>
       </div>
@@ -17,7 +21,7 @@
       <div class="navigation">
         <ul class="left-actions">
           <li class="nav-item">
-            <%= link_to "汁麺", "#", class: "nav-brand" %>
+            <%= link_to "汁麺", root_path, class: "nav-brand" %>
           </li>
         </ul>
       </div>
