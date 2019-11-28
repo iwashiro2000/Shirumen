@@ -1,0 +1,16 @@
+<div class="card post-card">
+  <div class="card-header">
+    投稿する
+  </div>
+  <div class="card-body">
+    <%= form_with model: @post do |f| %>
+      <div class="post-body">
+        <%= image_tag current_user.profile_photo, class: "avatar avatar-size32" %>
+        <%= f.text_area :text, placeholder: "好みのラーメンを投稿しよう", class: "form-control", rows: "3" %>
+      </div>
+      <div class="buttons">
+        <%= f.submit "投稿", class: "btn btn-primary post-btn" %>
+      </div>
+    <% end %>
+  </div>
+</div>

@@ -10,7 +10,7 @@
         
         <ul class="right-actions">
           <li class="nav-item">
-            <%= link_to "ツイート", "#", class: "btn btn-primary tweet-btn" %>
+            <%= link_to "投稿", new_post_path, class: "btn btn-primary tweet-btn" %>
           </li>
           <li class="nav-item">
               <%= link_to "ログアウト", destroy_user_session_path, method: :delete, class: "nav-link" %>
@@ -23,6 +23,13 @@
           <li class="nav-item">
             <%= link_to "汁麺", root_path, class: "nav-brand" %>
           </li>
+        </ul>
+        <ul>
+          <ul class= "right-actions">
+            <li class="nav-item">
+              <%= link_to "ログイン", new_user_session_path, class: "nav-link" %>
+            </li>
+          </ul>
         </ul>
       </div>
     <% end %>
